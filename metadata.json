@@ -1,0 +1,6 @@
+{
+  "name": "Zen FinTrack",
+  "description": "Simple tracking. Smarter saving. Personal financial tracking application with transaction immutability, mistake correction, and savings accumulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
