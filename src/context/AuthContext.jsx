@@ -48,11 +48,11 @@ export const AuthProvider = ({ children }) => {
   };
 
   const quickLoginAsDemoUser = async () => {
-    await login(process.env.USER_EMAIL, process.env.USER_PASS);
+    await login(import.meta.env.VITE_USER_EMAIL, import.meta.env.VITE_USER_PASS);
   };
 
   const quickLoginAsAdmin = async () => {
-    await login(process.env.ADMIN_EMAIL, process.env.ADMIN_PASS);
+    await login(import.meta.env.VITE_ADMIN_EMAIL, import.meta.env.VITE_ADMIN_PASS);
   };
 
   return (
