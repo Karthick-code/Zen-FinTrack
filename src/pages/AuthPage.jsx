@@ -51,7 +51,7 @@ export const AuthPage = () => {
           ₹
         </div> */}
 
-        <div>
+        <div className="mx-auto w-14 h-14 rounded-2xl bg-[#434C3E] text-[#FDFBF7] flex items-center justify-center shadow-lg text-3xl font-serif font-bold">
           <img
             src="https://res.cloudinary.com/dw94vpvkd/image/upload/v1787311376/Zen_FinTrack_lfyzcv.png"
             alt="Zen FinTrack"
@@ -205,7 +205,7 @@ export const AuthPage = () => {
                 </div>
               </button>
 
-              <button
+              {/* <button
                 type="button"
                 onClick={quickLoginAsAdmin}
                 className="p-2.5 rounded-xl border border-[#BC8A5F]/30 bg-[#BC8A5F]/10 hover:bg-[#BC8A5F]/20 text-left transition-all group flex items-center gap-2.5"
@@ -219,15 +219,15 @@ export const AuthPage = () => {
                   </p>
                   <p className="text-[11px] text-[#7A756D]">User Management</p>
                 </div>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
 
         {/* Database notice */}
         <div className="mt-6 text-center text-xs text-[#7A756D] flex items-center justify-center gap-1.5">
-          <Database className="w-3.5 h-3.5 text-[#434C3E]" />
-          {/* <span>Backed by persistent MongoDB Mongoose database connection</span> */}
+          <span> © 2026 Zen FinTrack. All rights reserved.</span>
+
         </div>
       </div>
     </div>
