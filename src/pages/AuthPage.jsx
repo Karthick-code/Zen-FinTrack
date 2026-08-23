@@ -63,7 +63,7 @@ export const AuthPage = () => {
           Zen FinTrack
         </h2>
         <p className="mt-1 text-sm text-[#7A756D]">
-          Simple tracking. Smarter saving. Powered by MongoDB.
+          Simple tracking. Smarter saving.
         </p>
       </div>
 
@@ -188,7 +188,7 @@ export const AuthPage = () => {
             <p className="text-xs text-center font-semibold text-[#7A756D] uppercase tracking-wider mb-3">
               One-Click Demo Access
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 justify-items-center">
               <button
                 type="button"
                 onClick={quickLoginAsDemoUser}
