@@ -76,11 +76,10 @@ export const AuthPage = () => {
                 setIsLogin(true);
                 setError(null);
               }}
-              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${
-                isLogin
+              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${isLogin
                   ? "border-[#434C3E] text-[#434C3E]"
                   : "border-transparent text-[#7A756D] hover:text-[#353531]"
-              }`}
+                }`}
             >
               Sign In
             </button>
@@ -89,11 +88,10 @@ export const AuthPage = () => {
                 setIsLogin(false);
                 setError(null);
               }}
-              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${
-                !isLogin
+              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${!isLogin
                   ? "border-[#434C3E] text-[#434C3E]"
                   : "border-transparent text-[#7A756D] hover:text-[#353531]"
-              }`}
+                }`}
             >
               Create Account
             </button>
@@ -183,7 +181,7 @@ export const AuthPage = () => {
             </button>
           </form>
 
-          {/* Quick Demo Logins */}
+          {/* Quick Demo Logins
           <div className="mt-8 pt-6 border-t border-[#EBE7E0]">
             <p className="text-xs text-center font-semibold text-[#7A756D] uppercase tracking-wider mb-3">
               One-Click Demo Access
@@ -219,17 +217,72 @@ export const AuthPage = () => {
                   </p>
                   <p className="text-[11px] text-[#7A756D]">User Management</p>
                 </div>
-              </button> */}
+              </button> 
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* Database notice */}
-        <div className="mt-6 text-center text-xs text-[#7A756D] flex items-center justify-center gap-1.5">
-          <span> © 2026 Zen FinTrack. All rights reserved.</span>
+          {/* Quick Demo Logins */}
+          <div className="mt-8 pt-6 border-t border-[#EBE7E0]">
+            <p className="text-xs text-center font-semibold text-[#7A756D] uppercase tracking-wider mb-3">
+              One-Click Demo Access
+            </p>
 
+            <div className="flex justify-center">
+              {/* Demo User */}
+              <button
+                type="button"
+                onClick={quickLoginAsDemoUser}
+                className="p-2.5 rounded-xl border border-[#EBE7E0] bg-[#FDFBF7] hover:bg-[#F7F4EE] text-left transition-all group flex items-center gap-2.5"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#434C3E]/10 text-[#434C3E] flex items-center justify-center shrink-0">
+                  <UserCheck className="w-4 h-4" />
+                </div>
+
+                <div>
+                  <p className="text-xs font-bold text-[#353531] group-hover:text-[#434C3E]">
+                    Demo User
+                  </p>
+                  <p className="text-[11px] text-[#7A756D]">
+                    Karthick R
+                  </p>
+                </div>
+              </button>
+
+              {/* =====================================================
+        ADMIN DEMO LOGIN - BACKUP CODE
+        Uncomment when needed
+        ===================================================== */}
+
+              {/*
+    <button
+      type="button"
+      onClick={quickLoginAsAdmin}
+      className="p-2.5 rounded-xl border border-[#BC8A5F]/30 bg-[#BC8A5F]/10 hover:bg-[#BC8A5F]/20 text-left transition-all group flex items-center gap-2.5"
+    >
+      <div className="w-8 h-8 rounded-lg bg-[#BC8A5F]/20 text-[#8C5D33] flex items-center justify-center shrink-0">
+        <ShieldCheck className="w-4 h-4" />
+      </div>
+
+      <div>
+        <p className="text-xs font-bold text-[#8C5D33]">
+          Master Admin
+        </p>
+        <p className="text-[11px] text-[#7A756D]">
+          User Management
+        </p>
+      </div>
+    </button>
+    */}
+            </div>
+          </div>
+
+          {/* Database notice */}
+          <div className="mt-6 text-center text-xs text-[#7A756D] flex items-center justify-center gap-1.5">
+            <span> © 2026 Zen FinTrack. All rights reserved.</span>
+
+          </div>
         </div>
       </div>
-    </div>
-  );
+      );
 };
