@@ -76,10 +76,11 @@ export const AuthPage = () => {
                 setIsLogin(true);
                 setError(null);
               }}
-              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${isLogin
+              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${
+                isLogin
                   ? "border-[#434C3E] text-[#434C3E]"
                   : "border-transparent text-[#7A756D] hover:text-[#353531]"
-                }`}
+              }`}
             >
               Sign In
             </button>
@@ -88,10 +89,11 @@ export const AuthPage = () => {
                 setIsLogin(false);
                 setError(null);
               }}
-              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${!isLogin
+              className={`flex-1 pb-3 text-sm font-semibold text-center border-b-2 transition-all ${
+                !isLogin
                   ? "border-[#434C3E] text-[#434C3E]"
                   : "border-transparent text-[#7A756D] hover:text-[#353531]"
-                }`}
+              }`}
             >
               Create Account
             </button>
@@ -243,9 +245,7 @@ export const AuthPage = () => {
                   <p className="text-xs font-bold text-[#353531] group-hover:text-[#434C3E]">
                     Demo User
                   </p>
-                  <p className="text-[11px] text-[#7A756D]">
-                    Karthick R
-                  </p>
+                  <p className="text-[11px] text-[#7A756D]">Karthick R</p>
                 </div>
               </button>
 
@@ -280,9 +280,9 @@ export const AuthPage = () => {
           {/* Database notice */}
           <div className="mt-6 text-center text-xs text-[#7A756D] flex items-center justify-center gap-1.5">
             <span> © 2026 Zen FinTrack. All rights reserved.</span>
-
           </div>
         </div>
       </div>
-      );
+    </div>
+  );
 };
