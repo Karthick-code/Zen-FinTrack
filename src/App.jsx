@@ -40,7 +40,7 @@ export function App() {
             ₹
           </div>
           <div className="animate-spin rounded-full h-8 w-8 border-2 border-[#434C3E] border-t-transparent"></div>
-          <p className="text-sm font-medium text-[#7A756D]">Connecting to Zen FinTrack MongoDB...</p>
+          <p className="text-sm font-medium text-[#7A756D]">Collecting Tracks...</p>
         </div>
       </div>
     );
